@@ -22,6 +22,7 @@ module.exports = {
       },
     ]
   },
+  //使用CommonsChunkPlugin将公共部分提取到单独的文件中，这对于浏览器缓存和节省带宽非常有用
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: "commons",

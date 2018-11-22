@@ -5,5 +5,11 @@
     "dev": "webpack-dev-server --open",
     "build": "webpack -p"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1"
+  },
+  "dependencies": {
+    "open-browser-webpack-plugin": "0.0.5"
+  }
 }
