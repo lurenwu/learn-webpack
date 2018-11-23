@@ -4,7 +4,6 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import './app.css';
 
-// ref https://stackoverflow.com/questions/46482433/reactjs-createclass-is-not-a-function
 class App extends React.Component {
   render() {
     return (
@@ -61,7 +60,6 @@ class Calendar extends React.Component {
   }
 };
 
-// ref https://segmentfault.com/q/1010000009616045/a-1020000009618728
 render((
   <BrowserRouter>
     <Route path="/" component={App} />
