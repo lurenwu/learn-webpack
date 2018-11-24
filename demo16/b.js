@@ -4,3 +4,4 @@ export default class B extends Component{
     return <div>this is B</div>
   }
 }
+//
