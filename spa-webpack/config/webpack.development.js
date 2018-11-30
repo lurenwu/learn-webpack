@@ -1,6 +1,5 @@
-module.exports = {
+module.exports ={
     output: {
-        filename: 'script/[name].bundles.js',
-        publicPath: '/'
+        filename: "scripts/[name].bundles.js",
     }
 }

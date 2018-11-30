@@ -1,8 +1,4 @@
-.test {
-    --fontColor: yellowgreen;
-    color: var(--fontColor);
-}
-.tests {
-    --fontColor: yellowgreen;
+.test{
+    --fontColor:red;
     color: var(--fontColor);
 }

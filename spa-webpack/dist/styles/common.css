@@ -1,0 +1,5 @@
+.test{
+    --fontColor:red;
+    color: var(--fontColor);
+}
+

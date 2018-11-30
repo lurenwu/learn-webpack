@@ -1,0 +1,8 @@
+{
+  "async-test.js": "scripts/async-test.bundles.js",
+  "common.css": "styles/common.css",
+  "common.js": "scripts/common.bundles.js",
+  "main.js": "scripts/main.bundles.js",
+  "runtime.js": "scripts/runtime.bundles.js",
+  "index.html": "index.html"
+}
