@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack-dev-server --open --history-api-fallback",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "license": "MIT",
   "dependencies": {
