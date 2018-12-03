@@ -1,0 +1,7 @@
+1.Compiler  对象代表了完整的 webpack 环境配置
+2.Compiler.run() -> Compilation 对象代表了一次资源版本构建
+3.compilation 对象也提供了很多关键步骤的回调 带来了一次版本 chunk
+4.compilation.buildModule -> loaders -> chunk(不认识的代码解析掉)
+5.Parser -> Dependency (负责处理依赖)
+6.Template 自带的 代码模板 直接生成 最后的解析结果
+7.Compiler / compilation 都继承自tapable 

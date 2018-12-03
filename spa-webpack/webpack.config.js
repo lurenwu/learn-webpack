@@ -15,7 +15,7 @@ const smp = new SpeedMeasurePlugin();
 const ManifestPlugin = require('webpack-manifest-plugin');
 // const DashboardPlugin = require('webpack-dashboard/plugin');
 const setTitle = require('node-bash-title');
-setTitle('陈林的webpack🍎');
+// setTitle('陈林的webpack🍎');
 const {
     join
 } = require("path");
@@ -98,4 +98,4 @@ webpackConfig = {
     ],
 };
 module.exports = smp.wrap(merge(_mergeConfig, webpackConfig));
-//module.exports = merge(_mergeConfig, webpackConfig);
+// module.exports = merge(_mergeConfig, webpackConfig);
