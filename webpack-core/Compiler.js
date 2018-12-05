@@ -1,4 +1,16 @@
-class Compiler extends Tapable {
+const {
+    Tapable,
+    SyncHook,
+    SyncBailHook,
+    SyncWaterfallHook,
+    SyncLoopHook,
+    AsyncParallelHook,
+    AsyncParallelBailHook,
+    AsyncSeriesHook,
+    AsyncSeriesBailHook,
+    AsyncSeriesWaterfallHook
+} = require("tapable");
+ class Compiler extends Tapable {
 	constructor(context) {
 		super();
 		this.hooks = {
@@ -59,3 +71,4 @@ class Compiler extends Tapable {
         };
 	}
 }
+module.exports = Compiler;

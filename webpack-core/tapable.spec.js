@@ -4,6 +4,7 @@
 //4.SyncLoopHook 同步循环 监听函数返回true返回的执行
 //5.+跟上面的意思都是一样的 异步的
 const {
+    Tapable,
     SyncHook,
     SyncBailHook,
     SyncWaterfallHook,
@@ -14,6 +15,9 @@ const {
     AsyncSeriesBailHook,
     AsyncSeriesWaterfallHook
 } = require("tapable");
+
+
+const Compiler = require("./Compiler");
 //接受一个可选的参数 这个参数是一个字符串的数组
 //compiler.hooks
 //let queue = new SyncHook(["name"]);
@@ -26,9 +30,9 @@ compiler.hooks.tap("1", function (name) {
     console.log(name, 1);
     return 1;
 });
-queue.tap("2", function (name, name2) {
+compiler.hooks.tap("2", function (name, name2) {
     console.log(name, name2, 2);
 });
 
 //执行钩子
-queue.call("webpack🍎");
+compiler.hooks.call("webpack🍎");
